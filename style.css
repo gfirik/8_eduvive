@@ -112,3 +112,38 @@ input{
     margin-left: -400%;
 }
 
+/* my slide show */
+#slide_show {
+    overflow: hidden;
+    height: 550px;
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  .slide_w {
+    width: 4500px;
+   animation: slideshow 16s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 550px;
+    width: 900px;
+  }
+  
+
+  
+  @keyframes slideshow {
+      0%{margin-left: 0px;}
+    20% {margin-left: 0px;}
+    30% {margin-left: -900px;}
+    40%{margin-left: -900px;}
+    50% {margin-left: -1800px;}
+    60% {margin-left: -1800px;}
+    70% {margin-left: -2700px;}
+    80% {margin-left: -2700px;}
+    90% {margin-left: -3600px;}
+    
+  }
+  
+  /* my slide show (end) */
