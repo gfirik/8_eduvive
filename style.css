@@ -4,6 +4,7 @@
     --green: #35CE8D;
     --white: #FDFFFF;
     --silver: #6B654B;
+    --maintext: 'Sora', sans-serif;
 }
 body {
     background-color: var(--white);
@@ -11,7 +12,7 @@ body {
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--maintext);
     box-sizing: border-box;
     font-size: 1.2rem;
     color: var(--black);
@@ -33,7 +34,7 @@ section {
     width: 100%;
     height: 100vh;
     background: rgba(255,	216,	0, 0.8);
-    opacity: ;
+    position: relative;
 }
 nav{
     width: 100%; 
@@ -53,7 +54,6 @@ nav{
 .logo span{
     color: var(--green);
     font-weight: bolder;
-    font-family: 'Rock Salt', cursive;
 }
 nav a{
     color: var(--black);
@@ -69,30 +69,51 @@ li {
     margin-right: 2rem;
 }
 /*slide show start*/
-#slide_show {
-    overflow: hidden;
+#slide-show {
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
+}
+.back-slideshow {
+    width: 500%;
+    height: 100%;
     z-index: -999;
+    position: relative;
+    display: flex;
+    animation: back-slideshow 10s ease-in-out 1s infinite alternate;
 }
-.slide_w {
-   display: flex;
-}
-.slide {
-    height: 100vh;
+.back-slideshow div {
     width: 100%;
-    animation: slideshow 6s ease infinite alternate-reverse;
- }
-@keyframes slideshow {
-    0%{margin-left: 0%;}
-    20% {margin-left: -100%;}
-    40%{margin-left: -200%;}
-    60% {margin-left: -300%;}
-    80% {margin-left: -400%;}
-} 
+ height: 100%;
+}
+@keyframes back-slideshow {
+0% {
+        margin-left: 0;
+    }
+ 20% {
+        margin-left: -100%;
+    }
+ 40% {
+        margin-left: -200%;
+    }
+    60%{
+        margin-left: -300%;
+    }
+    80% {
+        margin-left: -400%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+}
+.front-slideshow {
+    display: none;
+}
 /* my slide show (end) */
 #courses {
     text-align: center;
+    background: var(--white);
 }
 #courses h1 {
     font-size: 3rem;
@@ -100,4 +121,5 @@ li {
 .courses {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
 }
