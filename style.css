@@ -27,11 +27,8 @@ img {
     width: 100%;
     height: 100%;
 }
-section {
-    width: 100%;
-    height: 100vh;
-}
-/* NAV BAR */
+
+/* NAV BAR START */
 nav{
     width: 100%; 
     height: 12vh;
@@ -73,8 +70,9 @@ li {
     list-style-type: none;
     margin-right: 2rem;
 }
+/* NAV BAR END */
 
-/* HOME PAGE SECTION*/
+/* HOME PAGE SECTION start*/
 #home {
     width: 100%;
     height: 100vh;
@@ -100,7 +98,7 @@ header {
     flex-direction: column;
 }
 header h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     transition: 0.4s ease-in;
     letter-spacing: 0.5rem;
 }
@@ -128,6 +126,8 @@ header a {
 header a:hover {
     background: linear-gradient(to top,  #ffe700 5%, #e6c200 100%);
 }
+/* HOME PAGE SECTION end*/
+
 /*ABOUT section start*/
 #about {
     width: 100%;
@@ -146,8 +146,11 @@ header a:hover {
     border-radius: 4rem;
     cursor: default;
 }
+#about div:hover {
+    box-shadow: 10px 18px 32px 10px rgba( 31, 38, 135, 0.37 );
+}
 #about div:nth-child(3){
-    padding-left: 2rem;
+    padding: 1rem;
 }
 #about div:nth-child(1), #about div:nth-child(3) {
     background: var(--white);
@@ -161,26 +164,95 @@ header a:hover {
     background: rgba(253,255,255, 0.9);
 }
 #about div:nth-child(2) h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2rem;
 }
 #about div:nth-child(2) p {
     padding: 1.5rem;
 }
-
 /*ABOUT section end*/
 
 /*COURSES section start*/
 #courses {
-    text-align: center;
-    background: var(--white);
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
-#courses h1 {
-    font-size: 3rem;
+.courses-bg h1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -111;
+    font-size: 15rem;
 }
 .courses {
+    position: relative;
+    width: 100%;
+    height: 200vh;
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
+    background: rgba(0.0, 192.0, 11.0, .8);
+}
+.course-card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    box-shadow: 3px 7px 40px 10px var(--green);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.course-card div:nth-child(1){
+    width: 90%;
+    height: 13rem;
+    margin: 1rem auto;
+}
+.course-card div:nth-child(2) {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    position: absolute;
+    transform: translateY(13rem);
+    transition: 0.5s ease-in-out;
+    border-top: 1px solid var(--white);
+}
+.course-card div:nth-child(2) h3{
+    font-size: 2rem;
+    transform: translateY(1rem);
+    color: var(--white);
+}
+.course-card div:nth-child(2) h4{
+    font-size: 1.4rem;
+    transform: translateY(1.5rem);
+    color: var(--yellow);
+}
+.course-card div:nth-child(2) p {
+    font-size: 1.2rem;
+    transform: translateY(2rem);
+    opacity: 0;
+}
+.course-card:hover {
+    box-shadow: 3px 7px 40px 10px var(--white);
+}
+.course-card:hover div:nth-child(1) {
+    opacity: 0.3;
+}
+.course-card:hover div:nth-child(2){
+    transform: translateY(0rem);
+    backdrop-filter: blur(20px);
+    border: none;
+}
+.course-card:hover div:nth-child(2) p{
+    opacity: 1;
 }
 /*COURSES section end*/
