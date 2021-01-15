@@ -174,9 +174,9 @@ header a:hover {
 
 /*COURSES section start*/
 #courses {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 200vh;
 }
 .courses-bg h1{
     position: absolute;
@@ -188,6 +188,7 @@ header a:hover {
     justify-content: center;
     z-index: -111;
     font-size: 15rem;
+    line-height: 200vh;
 }
 .courses {
     position: relative;
@@ -256,3 +257,49 @@ header a:hover {
     opacity: 1;
 }
 /*COURSES section end*/
+
+/* TEAM SECTION START*/
+#team {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--silver);
+    position: relative;
+}
+.team-title {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+.team {
+    position: relative;
+    width: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team-card {
+    position: relative;
+    background: var(--transparent-yellow);
+    width: 15rem;
+    height: 20rem;
+    margin: 2rem;
+}
+.team-image {
+    width: 100%;
+    height: 5rem;
+    background: var(--green);
+    display: flex;
+    justify-content: center;
+}
+.team-image img {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    transform: translateY(2rem);
+    border: 1px solid black;
+    border-radius: 50%;
+    backdrop-filter: blur(40px);
+}
+/* TEAM SECTION END*/
