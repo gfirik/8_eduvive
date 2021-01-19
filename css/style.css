@@ -1,0 +1,416 @@
+body {
+  background-color: #FDFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #0B0500;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* NAV BAR START */
+nav {
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(253, 255, 255, 0.7);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+nav:hover {
+  background: rgba(255, 216, 0, 0.85);
+}
+
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo:hover {
+  border: 3px solid #00ac09;
+  border-radius: 10px;
+}
+
+nav a {
+  color: #0B0500;
+}
+
+ul {
+  height: 5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 2rem;
+}
+
+/* NAV BAR END */
+/* HOME PAGE SECTION start*/
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FDFFFF;
+  z-index: 1;
+}
+
+.home-image {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+  top: 10vh;
+}
+
+header {
+  width: 40%;
+  height: 60vh;
+  margin-top: 25vh;
+  text-align: center;
+  position: relative;
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h1 {
+  font-size: 6rem;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  letter-spacing: 0.5rem;
+}
+
+header h2 {
+  letter-spacing: 0.9rem;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  margin-top: 2rem;
+}
+
+header h1 span img {
+  width: 5rem;
+  position: relative;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+header a {
+  margin: auto 8rem;
+  background-color: #ffd800;
+  padding: 2rem;
+  border-radius: 48px;
+  background: linear-gradient(145deg, #e4e6e6, #ffffff);
+  -webkit-box-shadow: 12px 12px 24px #a2a3a3, -12px -12px 24px #ffffff;
+          box-shadow: 12px 12px 24px #a2a3a3, -12px -12px 24px #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+header a:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #ffe700), to(#e6c200));
+  background: linear-gradient(to top, #ffe700 5%, #e6c200 100%);
+}
+
+/* HOME PAGE SECTION end*/
+/*ABOUT section start*/
+#about {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffd800;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about div {
+  position: relative;
+  height: 60vh;
+  width: 30vw;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 4rem;
+  cursor: default;
+}
+
+#about div:hover {
+  -webkit-box-shadow: 10px 18px 32px 10px rgba(31, 38, 135, 0.37);
+          box-shadow: 10px 18px 32px 10px rgba(31, 38, 135, 0.37);
+}
+
+#about div:nth-child(3) {
+  padding: 1rem;
+}
+
+#about div:nth-child(1), #about div:nth-child(3) {
+  background: #FDFFFF;
+}
+
+#about div:nth-child(2) {
+  text-align: center;
+  background: #ffd800;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#about div:nth-child(2):hover {
+  background: rgba(253, 255, 255, 0.9);
+}
+
+#about div:nth-child(2) h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+#about div:nth-child(2) p {
+  padding: 1.5rem;
+}
+
+/*ABOUT section end*/
+/*COURSES section start*/
+#courses {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+
+.courses-bg h1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -111;
+  font-size: 15rem;
+  line-height: 200vh;
+}
+
+.courses {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background: rgba(0, 192, 11, 0.8);
+}
+
+.course-card {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: 3px 7px 40px 10px #00ac09;
+          box-shadow: 3px 7px 40px 10px #00ac09;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.course-card:hover {
+  -webkit-box-shadow: 3px 7px 40px 10px #FDFFFF;
+          box-shadow: 3px 7px 40px 10px #FDFFFF;
+}
+
+.course-card div:nth-child(1) {
+  width: 90%;
+  height: 13rem;
+  margin: 1rem auto;
+}
+
+.course-card div:nth-child(2) {
+  width: 20rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem;
+  position: absolute;
+  -webkit-transform: translateY(13rem);
+          transform: translateY(13rem);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-top: 1px solid #FDFFFF;
+}
+
+.course-card div:nth-child(2) h3 {
+  font-size: 2rem;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  color: #FDFFFF;
+}
+
+.course-card div:nth-child(2) h4 {
+  font-size: 1.4rem;
+  -webkit-transform: translateY(1.5rem);
+          transform: translateY(1.5rem);
+  color: #ffd800;
+}
+
+.course-card div:nth-child(2) p {
+  font-size: 1.2rem;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+}
+
+.course-card:hover div:nth-child(1) {
+  opacity: 0.3;
+}
+
+.course-card:hover div:nth-child(2) {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: none;
+}
+
+.course-card:hover div:nth-child(2) p {
+  opacity: 1;
+}
+
+/*COURSES section end*/
+/* TEAM SECTION START*/
+#team {
+  width: 100%;
+  height: 100vh;
+  background-color: #6B654B;
+  position: relative;
+}
+
+.team-title {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.team {
+  position: relative;
+  width: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.team-card {
+  position: relative;
+  background: rgba(255, 216, 0, 0.9);
+  width: 15rem;
+  height: 20rem;
+  margin: 2rem;
+}
+
+.team-image {
+  width: 100%;
+  height: 5rem;
+  background: #00ac09;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-image img {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  border: 1px solid #0B0500;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+/* TEAM SECTION END*/
+/*# sourceMappingURL=style.css.map */
