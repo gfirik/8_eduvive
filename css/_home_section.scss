@@ -5,7 +5,7 @@
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: $white;
     z-index: 1;
@@ -22,11 +22,11 @@ header {
     flex-direction: column;
     width: 40vw;
     h1 {
-        font-size: 5vw;
+        font-size: 6vw;
         transition: 0.4s ease-in;
         letter-spacing: 1vw;
         span img{
-            width: 6vw;
+            width: 8vw;
             position: relative;
             transform: translateY(1rem);
         }
@@ -35,6 +35,7 @@ header {
         letter-spacing: 0.9rem;
         transition: 0.4s ease-in;
         margin-top: 1rem;
+        font-size: 1.5vw;
     }
     a {
         margin: 5vh 9vw;

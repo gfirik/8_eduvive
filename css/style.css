@@ -35,6 +35,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(253, 255, 255, 0.7);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -45,7 +48,7 @@ nav {
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 
 nav:hover {
@@ -57,8 +60,6 @@ nav a {
 }
 
 .logo {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 1rem;
   width: 3rem;
   height: 3rem;
@@ -71,16 +72,17 @@ nav a {
 
 ul {
   height: 5vh;
-  margin-top: auto;
-  margin-bottom: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 li {
   list-style-type: none;
-  margin-right: 2rem;
+  margin-right: 4vw;
 }
 
 /* NAV BAR END */
@@ -92,8 +94,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,14 +125,14 @@ header {
 }
 
 header h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
   letter-spacing: 1vw;
 }
 
 header h1 span img {
-  width: 6vw;
+  width: 8vw;
   position: relative;
   -webkit-transform: translateY(1rem);
           transform: translateY(1rem);
@@ -140,6 +143,7 @@ header h2 {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
   margin-top: 1rem;
+  font-size: 1.5vw;
 }
 
 header a {
@@ -212,7 +216,7 @@ header a:hover {
 }
 
 #about div:nth-child(2) h1 {
-  font-size: 2.5rem;
+  font-size: 3vw;
   margin-top: 2rem;
 }
 
@@ -246,7 +250,7 @@ header a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: -111;
-  font-size: 15rem;
+  font-size: 19vw;
   line-height: 200vh;
 }
 
@@ -314,21 +318,21 @@ header a:hover {
 }
 
 .course-card div:nth-child(2) h3 {
-  font-size: 2rem;
+  font-size: 2vw;
   -webkit-transform: translateY(1rem);
           transform: translateY(1rem);
   color: #FDFFFF;
 }
 
 .course-card div:nth-child(2) h4 {
-  font-size: 1.4rem;
+  font-size: 1.8vw;
   -webkit-transform: translateY(1.5rem);
           transform: translateY(1.5rem);
   color: #ffd800;
 }
 
 .course-card div:nth-child(2) p {
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
   opacity: 0;
@@ -355,21 +359,34 @@ header a:hover {
 #team {
   width: 100%;
   height: 100vh;
-  background-color: #6B654B;
+  background-color: #FDFFFF;
   position: relative;
 }
 
 .team-title {
   text-align: center;
   width: 100%;
-  position: absolute;
+  height: 22vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-title h1 {
+  font-size: 3rem;
 }
 
 .team {
   position: relative;
-  width: auto;
+  height: 78vh;
+  width: 100%;
   overflow-x: hidden;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,34 +400,141 @@ header a:hover {
 
 .team-card {
   position: relative;
-  background: rgba(255, 216, 0, 0.9);
-  width: 15rem;
-  height: 20rem;
-  margin: 2rem;
+  background: #ffd800;
+  width: 18rem;
+  height: 25rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 18px 10px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 10px 13px -7px #000000, 0px 0px 18px 10px rgba(0, 0, 0, 0.11);
+  overflow: hidden;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  padding: 1rem;
 }
 
-.team-image {
+.team-card .team-image {
+  margin: 2rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.team-card .team-header {
+  text-align: center;
   width: 100%;
-  height: 5rem;
-  background: #00ac09;
+}
+
+.team-card .team-header h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.team-card .team-header h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #6B654B;
+}
+
+.team-card .team-hover {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.team-card:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 23px 16px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 23px 16px rgba(0, 0, 0, 0.26);
+}
+
+.team-card:hover .team-hover {
+  display: block;
+}
+
+.team-card:hover .team-info {
+  -webkit-transform: translateY(-13rem);
+          transform: translateY(-13rem);
+  opacity: 1;
+}
+
+.team-card:hover .team-header h3 {
+  display: none;
+}
+
+.team-card:hover .team-header h1 {
+  -webkit-transform: translateY(-13rem);
+          transform: translateY(-13rem);
+}
+
+.team-card .team-info {
+  color: #0B0500;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-transform: translateY(15rem);
+          transform: translateY(15rem);
+  opacity: 0;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.team-card .team-info p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.team-card .team-info .team-card-icon {
+  width: 100%;
+  margin: auto;
+  color: #0B0500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.team-card .team-info .team-card-icon a {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #0B0500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-.team-image img {
-  width: 6rem;
-  height: 6rem;
-  position: relative;
-  -webkit-transform: translateY(2rem);
-          transform: translateY(2rem);
-  border: 1px solid #0B0500;
-  border-radius: 50%;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+.team-card .team-info .team-card-icon a i {
+  font-size: 1.5rem;
+  color: #0B0500;
+}
+
+.team-card .team-info .team-card-icon a:hover {
+  background: #0B0500;
+}
+
+.team-card .team-info .team-card-icon a:hover i {
+  color: #ffd800;
 }
 
 /* TEAM SECTION END*/

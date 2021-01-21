@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     z-index: -111;
-    font-size: 15rem;
+    font-size: 19vw;
     line-height: 200vh;
 }
 .courses {
@@ -56,17 +56,17 @@
         transition: 0.5s ease-in-out;
         border-top: 1px solid $white;
         h3{
-            font-size: 2rem;
+            font-size: 2vw;
             transform: translateY(1rem);
             color: $white;
         }
         h4{
-            font-size: 1.4rem;
+            font-size: 1.8vw;
             transform: translateY(1.5rem);
             color: $yellow;
         }
         p{
-            font-size: 1.2rem;
+            font-size: 1.5vw;
             transform: translateY(2rem);
             opacity: 0;
         }

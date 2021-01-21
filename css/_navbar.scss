@@ -5,6 +5,7 @@ nav{
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: rgba(253, 255, 255, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.0px );
@@ -13,7 +14,7 @@ nav{
     z-index: 999;
     transition: 0.7s ease-in-out;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2vw;
     &:hover {
         background: rgba( 255, 216, 0, 0.85 );  
     }
@@ -23,8 +24,6 @@ nav{
 }
 
 .logo {
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: 1rem;
     width: 3rem; height: 3rem;
     &:hover {
@@ -34,11 +33,10 @@ nav{
 }
 ul {
     height: 5vh;
-    margin-top: auto;
-    margin-bottom: auto;
     display: flex;
+    align-items: center;
 }
 li {
     list-style-type: none;
-    margin-right: 2rem;
+    margin-right: 4vw;
 }
