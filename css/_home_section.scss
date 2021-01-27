@@ -12,6 +12,9 @@
     flex: wrap;
     div{
         width: 50vw;
+        position: relative;    
+        border-right: 10px solid $yellow;
+        border-bottom: 10px solid $yellow;
     }
 }
 

@@ -109,6 +109,9 @@ li {
 
 #home div {
   width: 50vw;
+  position: relative;
+  border-right: 10px solid #ffd800;
+  border-bottom: 10px solid #ffd800;
 }
 
 header {
