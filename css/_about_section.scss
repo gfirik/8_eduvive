@@ -15,6 +15,7 @@
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         border-radius: 4rem;
         cursor: default;
+        overflow: hidden;
         &:hover{
             box-shadow: 10px 18px 32px 10px rgba( 31, 38, 135, 0.37 );
         }
