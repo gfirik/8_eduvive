@@ -13,8 +13,8 @@
     div{
         width: 50vw;
         position: relative;    
-        border-right: 10px solid $yellow;
-        border-bottom: 10px solid $yellow;
+        border-right: 1rem solid $yellow;
+        border-bottom: 1rem solid $yellow;
     }
 }
 
@@ -52,7 +52,7 @@ header {
         font-weight: bold;
         transition: 2s ease-in-out;
         text-decoration-line: none;
-        color: $black;
+        color: $black-2;
         &:hover {
             background: linear-gradient(to top,  #ffe700 5%, #e6c200 100%);
         }

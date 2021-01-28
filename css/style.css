@@ -49,6 +49,7 @@ nav {
   transition: 0.7s ease-in-out;
   text-transform: uppercase;
   font-size: 1.2vw;
+  color: #333333;
 }
 
 nav .logo {
@@ -63,6 +64,7 @@ nav .logo:hover {
 }
 
 nav .nav-line {
+  position: relative;
   width: 40vw;
   height: 5vh;
   -webkit-transition: 0.7s ease-in-out;
@@ -75,20 +77,46 @@ nav .nav-line {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 nav .nav-line p {
-  font-family: "Dancing Script", cursive;
+  font-family: "Karla", sans-serif;
   font-size: 1.4vw;
-  margin: 1rem;
-  -webkit-animation: nav-text 10s ease-in-out 1s infinite forwards fill;
-          animation: nav-text 10s ease-in-out 1s infinite forwards fill;
+  letter-spacing: 0.5vw;
+  margin: auto;
+  line-height: 5vh;
+  -webkit-animation: nav-text 7s ease-in-out 1s infinite forwards alternate;
+          animation: nav-text 7s ease-in-out 1s infinite forwards alternate;
+}
+
+@-webkit-keyframes nav-text {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(-5vh);
+            transform: translateY(-5vh);
+  }
+  100% {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+}
+
+@keyframes nav-text {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(-5vh);
+            transform: translateY(-5vh);
+  }
+  100% {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
 }
 
 nav ul {
@@ -116,6 +144,7 @@ nav ul li a:hover {
 
 nav:hover {
   background: rgba(255, 216, 0, 0.85);
+  color: #0B0500;
 }
 
 /* NAV BAR END */
@@ -143,8 +172,8 @@ nav:hover {
 #home div {
   width: 50vw;
   position: relative;
-  border-right: 10px solid #ffd800;
-  border-bottom: 10px solid #ffd800;
+  border-right: 1rem solid #ffd800;
+  border-bottom: 1rem solid #ffd800;
 }
 
 header {
@@ -199,7 +228,7 @@ header a {
   transition: 2s ease-in-out;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
-  color: #0B0500;
+  color: #333333;
 }
 
 header a:hover {
@@ -221,6 +250,7 @@ header a:hover {
           justify-content: space-evenly;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  color: #333333;
 }
 
 #about div {
@@ -232,6 +262,7 @@ header a:hover {
   border-radius: 4rem;
   cursor: default;
   overflow: hidden;
+  color: #333333;
 }
 
 #about div:hover {
@@ -424,6 +455,9 @@ header a:hover {
 
 .team-title h1 {
   font-size: 3rem;
+  border-left: 1vw solid #ffd800;
+  border-right: 1vw solid #ffd800;
+  padding: 0 1vw;
 }
 
 .team, .swiper-wrapper {

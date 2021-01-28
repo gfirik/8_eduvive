@@ -16,6 +16,9 @@
     justify-content: center;
     h1{
         font-size: 3rem;
+        border-left: 1vw solid $yellow;
+        border-right: 1vw solid $yellow;
+        padding: 0 1vw;
     }
 }
 .team, .swiper-wrapper {
