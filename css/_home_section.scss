@@ -22,6 +22,7 @@ header {
     text-align: center;
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 40vw;
     h1 {
@@ -43,13 +44,15 @@ header {
     a {
         margin: 5vh 9vw;
         background-color: $yellow;
-        padding: 2rem;
+        padding: 2rem 5rem;
         border-radius: 48px;
         background: linear-gradient(145deg, #e4e6e6, #ffffff);
         box-shadow:  12px 12px 24px #a2a3a3, -12px -12px 24px #ffffff;
         font-size: 1.4vw;
         font-weight: bold;
         transition: 2s ease-in-out;
+        text-decoration-line: none;
+        color: $black;
         &:hover {
             background: linear-gradient(to top,  #ffe700 5%, #e6c200 100%);
         }

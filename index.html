@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="photos/logo.png">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/e6c29adc13.js" crossorigin="anonymous"></script>
     <title>eduvive.uz</title>
 </head>
 <body>
     <nav>
         <div class="logo"><a href="#home"><img src="photos/logo.png" alt="" srcset=""></a></div>
+        <div class="nav-line">
+            <p>Growth to a bright future!</p>
+            <p>O'qi va biz bilan rivojlan!</p>
+            <p>Учись и развивайся вместе с нами!</p>
+        </div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -96,13 +105,14 @@
         </div>
     </section>
 
-    <section id="team">
+    <section id="team" class="swiper-container">
         <div class="team-title">
             <h1>Our Team!</h1>
         </div>
 
-        <div class="team">
-            <div class="team-card">
+        <div class="team swiper-wrapper">
+
+            <div class="team-card swiper-slide" >
                 <div class="team-hover"></div>
                 <div class="team-image"><img src="photos\team-image.jpg"></div>
                 <div class="team-header">
@@ -120,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="team-card">
+            <div class="team-card swiper-slide" >
                 <div class="team-hover"></div>
                 <div class="team-image"><img src="photos\team-image.jpg"></div>
                 <div class="team-header">
@@ -138,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="team-card">
+            <div class="team-card swiper-slide" >
                 <div class="team-hover"></div>
                 <div class="team-image"><img src="photos\team-image.jpg"></div>
                 <div class="team-header">
@@ -156,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="team-card">
+            <div class="team-card swiper-slide" >
                 <div class="team-hover"></div>
                 <div class="team-image"><img src="photos\team-image.jpg"></div>
                 <div class="team-header">
@@ -173,11 +183,69 @@
                     </div>
                 </div>
             </div>
-      
+
+            <div class="team-card swiper-slide" >
+                <div class="team-hover"></div>
+                <div class="team-image"><img src="photos\team-image.jpg"></div>
+                <div class="team-header">
+                    <h1>Falonchiyev Pistonchi</h1>
+                    <h3>G'irt Bekorchi</h3>
+                </div>
+                <div class="team-info">
+                    <p>Ushbu palonchi g'irt bekorchi bo'lib eduviveda baloyam qilmaydi.</p>
+                    <div class="team-card-icon">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card swiper-slide" >
+                <div class="team-hover"></div>
+                <div class="team-image"><img src="photos\team-image.jpg"></div>
+                <div class="team-header">
+                    <h1>Falonchiyev Pistonchi</h1>
+                    <h3>G'irt Bekorchi</h3>
+                </div>
+                <div class="team-info">
+                    <p>Ushbu palonchi g'irt bekorchi bo'lib eduviveda baloyam qilmaydi.</p>
+                    <div class="team-card-icon">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card swiper-slide" >
+                <div class="team-hover"></div>
+                <div class="team-image"><img src="photos\team-image.jpg"></div>
+                <div class="team-header">
+                    <h1>Falonchiyev Pistonchi</h1>
+                    <h3>G'irt Bekorchi</h3>
+                </div>
+                <div class="team-info">
+                    <p>Ushbu palonchi g'irt bekorchi bo'lib eduviveda baloyam qilmaydi.</p>
+                    <div class="team-card-icon">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>            
+
+           
         </div>
-        
-    </section>
 
+    </section>
+   
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- VanillaTilt -->
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".course-card"), {
@@ -185,6 +253,24 @@
             speed: 400
         });
     </script> 
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto' ,
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true, 
+            },
+            loop: true,
+            
+        });
+    </script>
 </body>
 </html>
