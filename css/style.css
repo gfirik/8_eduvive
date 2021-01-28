@@ -262,7 +262,6 @@ header a:hover {
   border-radius: 4rem;
   cursor: default;
   overflow: hidden;
-  color: #333333;
 }
 
 #about div:hover {
@@ -283,6 +282,7 @@ header a:hover {
   background: #ffd800;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  color: #333333;
 }
 
 #about div:nth-child(2):hover {
@@ -458,6 +458,7 @@ header a:hover {
   border-left: 1vw solid #ffd800;
   border-right: 1vw solid #ffd800;
   padding: 0 1vw;
+  color: #333333;
 }
 
 .team, .swiper-wrapper {
