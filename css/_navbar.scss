@@ -77,6 +77,19 @@ nav{
             border-radius: 2.5px;
         }
     }
+    .menu-exit-btn {
+        width: 30px; height: 25px;
+        display: none;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        span {
+            width: 100%;
+            height: 8px;
+            background: $black-2;
+            position: absolute;
+        }
+    }
 } 
 
 @media only screen and (max-width: 666px) {
@@ -87,6 +100,14 @@ nav{
         }
         .menu-btn {
             display: flex;
+        }
+        .menu-exit-btn {
+            span:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            span:nth-child(2) {
+                transform: rotate(-45deg);
+            }
         }
         .logo {
             width: 5rem; height: 5rem;
