@@ -60,7 +60,7 @@ nav .logo {
 
 nav .logo:hover {
   border: 3px solid #00ac09;
-  border-radius: 10px;
+  border-radius: 0.4rem;
 }
 
 nav .nav-line {
@@ -145,6 +145,51 @@ nav ul li a:hover {
 nav:hover {
   background: rgba(255, 216, 0, 0.85);
   color: #0B0500;
+}
+
+nav .menu-btn {
+  width: 25px;
+  height: 25px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .menu-btn span {
+  width: 100%;
+  height: 5px;
+  background: #333333;
+  border-radius: 2.5px;
+}
+
+@media only screen and (max-width: 666px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  nav .nav-line {
+    width: 60vw;
+  }
+  nav .nav-line p {
+    font-size: 2.2vw;
+  }
 }
 
 /* NAV BAR END */

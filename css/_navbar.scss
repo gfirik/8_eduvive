@@ -20,7 +20,7 @@ nav{
         width: 3rem; height: 3rem;
         &:hover {
             border: 3px solid $green;
-            border-radius: 10px;
+            border-radius: 0.4rem;
         }
     }    
     .nav-line {
@@ -63,5 +63,39 @@ nav{
     &:hover {
         background: rgba( 255, 216, 0, 0.85 );
         color: $black;
-    }   
-}
+    } 
+    .menu-btn {
+        width: 25px;
+        height: 25px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+            width: 100%;
+            height: 5px;
+            background: $black-2;
+            border-radius: 2.5px;
+        }
+    }
+} 
+
+@media only screen and (max-width: 666px) {
+    nav {
+        justify-content: space-around;
+        ul {
+            display: none;
+        }
+        .menu-btn {
+            display: flex;
+        }
+        .logo {
+            width: 5rem; height: 5rem;
+        }
+        .nav-line {
+            width: 60vw;
+            p {
+            font-size: 2.2vw;
+            }
+        }
+    }
+} 
