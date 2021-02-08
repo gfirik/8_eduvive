@@ -639,19 +639,185 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 20px #333333;
+          box-shadow: 0px 0px 20px #333333;
 }
 
 #contact .contact .left-contact {
-  height: 100%;
-  width: 60%;
+  position: relative;
+  padding-left: 10vw;
+  padding-right: 40vw;
+  padding-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact .left-contact h1 {
+  font-size: 5vw;
+}
+
+#contact .contact .left-contact p {
+  font-size: 1.4vw;
+  margin-top: 2vh;
+}
+
+#contact .contact .left-contact input {
+  margin-top: 2.5vh;
+  width: 100%;
+  height: 6vh;
+  border: none;
+  -webkit-box-shadow: 1px 1px 2px #333333;
+          box-shadow: 1px 1px 2px #333333;
+}
+
+#contact .contact .left-contact input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+#contact .contact .left-contact input:-ms-input-placeholder {
+  color: #333333;
+}
+
+#contact .contact .left-contact input::-ms-input-placeholder {
+  color: #333333;
+}
+
+#contact .contact .left-contact input::placeholder {
+  color: #333333;
+}
+
+#contact .contact .left-contact input[type="text"], #contact .contact .left-contact input[type="email"] {
+  padding-left: 1rem;
+}
+
+#contact .contact .left-contact input[type="button"] {
   background: #333333;
+  color: #FDFFFF;
+  height: 10vh;
+}
+
+#contact .contact .left-contact input[type="button"]:hover {
+  cursor: pointer;
+}
+
+#contact .contact .left-contact span {
+  position: absolute;
+  width: 4vw;
+  height: 8vh;
+}
+
+#contact .contact .left-contact .yellow-box-1 {
+  left: 2vw;
+  top: 30vh;
+  background: #333333;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#contact .contact .left-contact .yellow-box-2 {
+  left: 44vw;
+  top: 6vh;
+  z-index: 1;
+  background: #ffd800;
 }
 
 #contact .contact .right-contact {
-  height: 100%;
-  width: 40%;
-  background: #FDFFFF;
+  position: absolute;
+  right: -5vw;
+  top: 10vh;
+  height: 55vh;
+  width: 40vw;
+  background: #333333;
+  -webkit-box-shadow: 14px 15px 50px #333333;
+          box-shadow: 14px 15px 50px #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5vw;
+}
+
+#contact .contact .right-contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5vh;
+}
+
+#contact .contact .right-contact div i, #contact .contact .right-contact div p, #contact .contact .right-contact div h1 {
+  color: #FDFFFF;
+}
+
+#contact .contact .right-contact div h1 {
+  font-size: 4vw;
+}
+
+#contact .contact .right-contact div p {
+  margin-left: 2vw;
 }
 
 /* TEAM SECTION END*/
+footer {
+  width: 100%;
+  height: 30vh;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer h1 {
+  font-size: 2vw;
+  color: #0B0500;
+}
+
+footer div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer div a {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+footer div a:hover i {
+  color: #FDFFFF;
+}
+
+footer div a i {
+  font-size: 3vw;
+}
+
+footer p {
+  color: #FDFFFF;
+}
+
+footer p a {
+  color: inherit;
+}
 /*# sourceMappingURL=style.css.map */

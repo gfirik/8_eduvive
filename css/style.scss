@@ -44,3 +44,37 @@ img {
 /* TEAM SECTION START*/
 @import './contact_section';
 /* TEAM SECTION END*/
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background: $black-2;
+    display: flex; flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1{
+            font-size: 2vw;
+            color: $black;
+    }
+    div {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        a {
+            transition: 0.4s ease-in;
+            &:hover i{
+                color: $white;
+            }
+            i{         
+            font-size: 3vw;
+            }
+        }
+    }
+    p {
+    color: $white;
+        a {
+        color: inherit;
+        }
+    }
+}
