@@ -42,7 +42,7 @@ header {
         font-size: 1.5vw;
     }
     a {
-        margin: 5vh 9vw;
+        margin-top: 5vh;
         background-color: $yellow;
         padding: 2rem 5rem;
         border-radius: 48px;
@@ -55,6 +55,32 @@ header {
         color: $black-2;
         &:hover {
             background: linear-gradient(to top,  #ffe700 5%, #e6c200 100%);
+        }
+    }
+}
+@media only screen and (max-width: 666px) {
+    #home {
+        flex-direction: column-reverse;
+        header {
+            width: 100%;
+            h1 {
+                font-size: 8rem;
+                letter-spacing: 2rem;
+                span img {
+                    width: 12vw;
+                }
+            }
+            h2 {
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+            a {
+                padding: 4vh 10vw;
+                font-size: 3vw;
+            }
+        }
+        div {
+            width: 70vw; height: auto;
         }
     }
 }

@@ -217,6 +217,7 @@ nav .menu-exit-btn span {
   }
   nav .nav-line p {
     font-size: 2.2vw;
+    font-weight: bolder;
   }
 }
 
@@ -288,7 +289,7 @@ header h2 {
 }
 
 header a {
-  margin: 5vh 9vw;
+  margin-top: 5vh;
   background-color: #ffd800;
   padding: 2rem 5rem;
   border-radius: 48px;
@@ -307,6 +308,37 @@ header a {
 header a:hover {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #ffe700), to(#e6c200));
   background: linear-gradient(to top, #ffe700 5%, #e6c200 100%);
+}
+
+@media only screen and (max-width: 666px) {
+  #home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #home header {
+    width: 100%;
+  }
+  #home header h1 {
+    font-size: 8rem;
+    letter-spacing: 2rem;
+  }
+  #home header h1 span img {
+    width: 12vw;
+  }
+  #home header h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  #home header a {
+    padding: 4vh 10vw;
+    font-size: 3vw;
+  }
+  #home div {
+    width: 70vw;
+    height: auto;
+  }
 }
 
 /* HOME PAGE SECTION end*/
@@ -369,6 +401,36 @@ header a:hover {
 
 #about div:nth-child(2) p {
   padding: 1.5rem;
+}
+
+@media only screen and (max-width: 666px) {
+  #about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 5rem;
+  }
+  #about div {
+    width: 80vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #about div:nth-child(2) {
+    background: #FDFFFF;
+    padding: 1rem;
+  }
+  #about div:nth-child(2) h1 {
+    font-size: 6vw;
+  }
+  #about div:nth-child(2) p {
+    font-size: 3.5vw;
+    margin-top: 1rem;
+  }
 }
 
 /*ABOUT section end*/
