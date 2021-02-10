@@ -72,7 +72,6 @@
         }
     }
 }
-
 .course-card:hover div:nth-child(1) {
     opacity: 0.3;
 }
@@ -83,4 +82,47 @@
 }
 .course-card:hover div:nth-child(2) p{
     opacity: 1;
+}
+@media only screen and (max-width: 666px) {
+    #courses {
+        height: auto; 
+    }
+    .courses-bg {
+        transform: rotate(90deg) translateY(100vh);
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0.0, 192.0, 11.0, .8);
+        height: auto;
+        padding-bottom: 10rem;
+        .course-card {
+            position: relative;
+            margin-top: 20rem;
+            width: 50rem;
+            min-height: 70rem;
+            div:nth-child(1){
+                height: 40rem;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 70vh;
+                padding-left: 2rem;
+                transform: translateY(45rem);
+                h3 {
+                    font-size: 8vw;
+                }
+                h4 {
+                    font-size: 5vw;
+                    width: 100%;
+                }
+                p {
+                    font-size: 4vw;
+                }
+            }
+            &:hover div:nth-child(2), &:focus div:nth-child(2){
+                transform: translatey(5rem);
+            }
+        }
+    }
 }

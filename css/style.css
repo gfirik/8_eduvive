@@ -563,6 +563,58 @@ header a:hover {
   opacity: 1;
 }
 
+@media only screen and (max-width: 666px) {
+  #courses {
+    height: auto;
+  }
+  .courses-bg {
+    -webkit-transform: rotate(90deg) translateY(100vh);
+            transform: rotate(90deg) translateY(100vh);
+  }
+  .courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(0, 192, 11, 0.8);
+    height: auto;
+    padding-bottom: 10rem;
+  }
+  .courses .course-card {
+    position: relative;
+    margin-top: 20rem;
+    width: 50rem;
+    min-height: 70rem;
+  }
+  .courses .course-card div:nth-child(1) {
+    height: 40rem;
+  }
+  .courses .course-card div:nth-child(2) {
+    width: 100%;
+    height: 70vh;
+    padding-left: 2rem;
+    -webkit-transform: translateY(45rem);
+            transform: translateY(45rem);
+  }
+  .courses .course-card div:nth-child(2) h3 {
+    font-size: 8vw;
+  }
+  .courses .course-card div:nth-child(2) h4 {
+    font-size: 5vw;
+    width: 100%;
+  }
+  .courses .course-card div:nth-child(2) p {
+    font-size: 4vw;
+  }
+  .courses .course-card:hover div:nth-child(2), .courses .course-card:focus div:nth-child(2) {
+    -webkit-transform: translatey(5rem);
+            transform: translatey(5rem);
+  }
+}
+
 /*COURSES section end*/
 /* TEAM SECTION START*/
 #team, .swiper-container {
