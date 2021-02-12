@@ -61,11 +61,11 @@ footer {
         display: flex;
         justify-content: space-evenly;
         a {
-            transition: 0.4s ease-in;
             &:hover i{
                 color: $white;
             }
             i{         
+            transition: 0.4s ease-in-out;
             font-size: 3vw;
             }
         }

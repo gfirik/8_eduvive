@@ -1,33 +1,39 @@
-// var nav = document.getElementById("nav");
-// var navLinks = document.getElementById("nav-links");
-// var navLines = document.getElementById("nav-line");
-// var btn = document.getElementById("menu-btn");
-// var xBtn = document.getElementById("menu-exit-btn");
+var nav = document.getElementById("nav-links");
+var btns = nav.getElementsByClassName("nav-a-list");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+}
 
-// function toggleMenu() {
-//     if (navLinks.style.display === "none") {
-//         navLinks.style.display = "block";
-//         btn.style.display = "none";
-//         navLines.style.display = "none";
-//         nav.style.height="100vh";
-//         xBtn.style.display = "block";
-//     } 
-//     else {
-//         navLinks.style.display = "none";
-//         nav.style.height= "10vh";
-//         xBtn.style.display = "none";
-//         btn.style.display = "block";
-//     }
-//     return(0);
-// }
-// function exitMenu() {
-//     if(btn.style.display === "none"){
-//         btn.style.display = "block";
-//         xBtn.style.display = "none";
-//     }
-//     else {
-//         btn.style.display = "none";
-//         xBtn.style.display = "block";
-//     }
-//     return(0);
-// }
+var menuBtn = document.getElementById("menu-btn");
+var exitBtn = document.getElementById("menu-exit-btn");
+function toggleMenu() {
+    if(nav.style.display="none"){
+        nav.style.display="flex";
+        menuBtn.style.display="none";
+        exitBtn.style.display="flex";
+    }
+    else {
+        nav.style.display="none";
+        exitBtn.style.display="none";
+    }
+}
+
+function exitMenu() {
+    if(nav.style.display="flex") {
+        nav.style.display="none";
+        exitBtn.style.display="none";
+        menuBtn.style.display="flex";
+    }
+    else {
+        nav.style.display="flex";
+        exitBtn.style.display="flex";
+        menuBtn.style.display="none";
+    }
+}
+// nav.style.display="none";
+//     exitBtn.style.display="none";
+//     menuBtn.style.display="flex";
