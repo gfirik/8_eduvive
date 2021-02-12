@@ -24,7 +24,6 @@ for (var i = 0; i < links.length; i++) {
     });
 }
 
-
 function toggleMenu() {
     if(nav.style.display="none"){
         nav.style.display="flex";
@@ -48,15 +47,3 @@ function exitMenu() {
         menuBtn.style.display="none";
     }
 }
-
-function myFunction(windowSize) {
-    if(windowSize.matches){
-        nav.style.display="none";
-        exitBtn.style.display="none";
-        menuBtn.style.display="flex";
-    } 
-    else {}
-}
-var windowSize = window.matchMedia("(max-width: 666px");
-myFunction(windowSize);
-windowSize.addEventListener(myFunction);

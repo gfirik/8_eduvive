@@ -466,14 +466,24 @@ header a:hover {
   }
   #about div:nth-child(2) {
     background: #FDFFFF;
-    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 2rem;
   }
   #about div:nth-child(2) h1 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   #about div:nth-child(2) p {
-    font-size: 3.5vw;
-    margin-top: 1rem;
+    font-size: 4vw;
   }
   #about div:nth-child(1), #about div:nth-child(3) {
     display: none;
@@ -1014,7 +1024,7 @@ header a:hover {
 @media only screen and (max-width: 666px) {
   #contact {
     height: auto;
-    padding: 4rem;
+    padding: 0;
     margin: 0;
   }
   #contact .contact {
@@ -1028,14 +1038,15 @@ header a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    margin: 0;
+    margin: 10rem auto;
+    padding: 0;
   }
   #contact .contact .left-contact {
     position: relative;
     margin: auto;
     padding: 7rem;
     width: 100%;
-    height: 80vh;
+    height: auto;
   }
   #contact .contact .left-contact h1 {
     font-size: 10vw;
@@ -1059,7 +1070,7 @@ header a:hover {
     height: auto;
     left: auto;
     right: auto;
-    top: -5vh;
+    top: -3rem;
   }
   #contact .contact .right-contact div {
     margin-left: 5vw;
