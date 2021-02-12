@@ -125,7 +125,7 @@ nav ul {
 }
 
 nav ul .active a {
-  border-bottom: 2px solid #333333;
+  border-bottom: 3px solid #333333;
   padding-bottom: 1vh;
 }
 
@@ -230,6 +230,7 @@ nav .menu-exit-btn span:nth-child(2) {
   }
   nav ul li a {
     font-size: 5vw;
+    font-weight: bolder;
   }
   nav .menu-btn {
     position: relative;

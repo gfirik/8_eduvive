@@ -47,7 +47,7 @@ nav{
         align-items: center;
         .active {
             a {
-                border-bottom: 2px solid $black-2;
+                border-bottom: 3px solid $black-2;
                 padding-bottom: 1vh;
             }
         }
@@ -118,6 +118,7 @@ nav{
             li{
                 a{
                 font-size: 5vw;
+                font-weight: bolder;
                 }
             }
         }
