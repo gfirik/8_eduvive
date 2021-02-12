@@ -87,3 +87,32 @@
         }
     }
 }
+@media only screen and (max-width: 666px) {
+    
+    #contact {
+        height: auto;
+        .contact {
+            width: 90vw;
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            .left-contact{
+                position: relative;
+                margin: 0; padding: 10rem;
+                width: 100%;
+                input {
+                    width: 90%;
+                    margin: 1vh auto;
+                }
+                span {
+                    display: none;
+                }
+            }
+            .right-contact{
+                position: relative;
+                margin: 10vh 0;
+                width: 70vw;
+            }
+        }
+    }
+}

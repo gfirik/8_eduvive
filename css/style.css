@@ -808,6 +808,15 @@ header a:hover {
   color: #ffd800;
 }
 
+@media only screen and (max-width: 666px) {
+  .team-title h1 {
+    font-size: 7rem;
+  }
+  .team-card {
+    width: 20rem;
+  }
+}
+
 /* TEAM SECTION END*/
 /* TEAM SECTION START*/
 #contact {
@@ -950,6 +959,41 @@ header a:hover {
 
 #contact .contact .right-contact div p {
   margin-left: 2vw;
+}
+
+@media only screen and (max-width: 666px) {
+  #contact {
+    height: auto;
+  }
+  #contact .contact {
+    width: 90vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #contact .contact .left-contact {
+    position: relative;
+    margin: 0;
+    padding: 10rem;
+    width: 100%;
+  }
+  #contact .contact .left-contact input {
+    width: 90%;
+    margin: 1vh auto;
+  }
+  #contact .contact .left-contact span {
+    display: none;
+  }
+  #contact .contact .right-contact {
+    position: relative;
+    margin: 10vh 0;
+    width: 70vw;
+  }
 }
 
 /* TEAM SECTION END*/

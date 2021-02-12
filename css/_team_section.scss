@@ -133,3 +133,15 @@
         }   
     }
 }
+@media only screen and (max-width: 666px) {
+    // .team-card, .swiper-slide {
+    // }
+    .team-title {
+        h1 {
+        font-size: 7rem;
+        }
+    }
+    .team-card {
+        width: 20rem;
+    }
+}
