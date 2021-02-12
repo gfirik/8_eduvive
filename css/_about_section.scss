@@ -51,6 +51,7 @@
         flex-direction: column;
         height: auto;
         padding: 5rem;
+        height: 80vh;
         div {
             width: 80vw;
             margin-top: 5rem;
@@ -66,6 +67,9 @@
                 font-size: 3.5vw;
                 margin-top: 1rem;
             }
+        }
+        div:nth-child(1), div:nth-child(3) {
+            display: none;
         }
     }
 }

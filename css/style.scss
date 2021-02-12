@@ -52,7 +52,6 @@ footer {
     display: flex; flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
     h1{
             font-size: 2vw;
             color: $black;
@@ -75,6 +74,27 @@ footer {
     color: $white;
         a {
         color: inherit;
+        }
+    }
+}
+@media only screen and (max-width: 666px) {
+    footer {
+        h1{
+            font-size: 5vw;
+        }
+        div {
+            width: 90%;
+            a{
+              i {
+                font-size: 7vw;
+                }   
+            }
+        }
+        p {
+            font-size: 4vw;
+            a {
+                font-size: 3vw;
+            }
         }
     }
 }

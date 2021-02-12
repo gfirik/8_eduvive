@@ -414,6 +414,7 @@ header a:hover {
             flex-direction: column;
     height: auto;
     padding: 5rem;
+    height: 80vh;
   }
   #about div {
     width: 80vw;
@@ -430,6 +431,9 @@ header a:hover {
   #about div:nth-child(2) p {
     font-size: 3.5vw;
     margin-top: 1rem;
+  }
+  #about div:nth-child(1), #about div:nth-child(3) {
+    display: none;
   }
 }
 
@@ -852,6 +856,8 @@ header a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #contact .contact .left-contact h1 {
@@ -900,6 +906,7 @@ header a:hover {
 
 #contact .contact .left-contact input[type="button"]:hover {
   cursor: pointer;
+  background: #ffd800;
 }
 
 #contact .contact .left-contact span {
@@ -964,6 +971,8 @@ header a:hover {
 @media only screen and (max-width: 666px) {
   #contact {
     height: auto;
+    padding: 4rem;
+    margin: 0;
   }
   #contact .contact {
     width: 90vw;
@@ -972,27 +981,51 @@ header a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin: 0;
   }
   #contact .contact .left-contact {
     position: relative;
-    margin: 0;
-    padding: 10rem;
+    margin: auto;
+    padding: 7rem;
     width: 100%;
+    height: 80vh;
+  }
+  #contact .contact .left-contact h1 {
+    font-size: 10vw;
+  }
+  #contact .contact .left-contact p {
+    font-size: 3vw;
   }
   #contact .contact .left-contact input {
-    width: 90%;
     margin: 1vh auto;
+    font-size: 3vw;
+    margin-top: 3vh;
   }
   #contact .contact .left-contact span {
     display: none;
   }
   #contact .contact .right-contact {
     position: relative;
-    margin: 10vh 0;
-    width: 70vw;
+    margin: auto;
+    padding-bottom: 5vh;
+    width: 80vw;
+    height: auto;
+    left: auto;
+    right: auto;
+    top: -5vh;
+  }
+  #contact .contact .right-contact div {
+    margin-left: 5vw;
+  }
+  #contact .contact .right-contact div h1 {
+    font-size: 10vw;
+  }
+  #contact .contact .right-contact div p, #contact .contact .right-contact div i {
+    font-size: 3vw;
   }
 }
 
@@ -1050,5 +1083,23 @@ footer p {
 
 footer p a {
   color: inherit;
+}
+
+@media only screen and (max-width: 666px) {
+  footer h1 {
+    font-size: 5vw;
+  }
+  footer div {
+    width: 90%;
+  }
+  footer div a i {
+    font-size: 7vw;
+  }
+  footer p {
+    font-size: 4vw;
+  }
+  footer p a {
+    font-size: 3vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
