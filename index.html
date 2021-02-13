@@ -22,7 +22,7 @@
             <p>Trust the Process!</p>
             <p>Live in the moment!</p>
         </div>
-        <ul id="nav-links">
+        <ul id="nav-links" class="nav-links">
             <li class="nav-a-list active"><a href="#home">Home</a></li>
             <li class="nav-a-list"><a href="#about">About</a></li>
             <li class="nav-a-list"><a href="#courses">Courses</a></li>
@@ -245,18 +245,19 @@
     </section>
 
     <section id="contact">
-        <form class="contact">
-            <div class="left-contact">
+        <div class="contact">
+            <form class="left-contact">
                 <h1>Contact Us</h1>
                 <p>Feel free to contact any time you want<br> 
                 leave your message here</p>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="message" id="message" placeholder="Message">
-                <input type="button" value="Send">
-                <span class="yellow-box-1"></span>
-                <span class="yellow-box-2"></span>
-            </div>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="message" id="message" placeholder="Message">
+                    <input type="submit" value="Send" onclick="sendButton()" id="sendButton">
+                    <input type="button" value="Sent" id="sentButton">
+                    <span class="yellow-box-1"></span>
+                    <span class="yellow-box-2"></span>
+            </form>
             <div class="right-contact">
                 <div><h1>info</h1></div>
                 <div><i class="far fa-envelope"></i><p>eduvivecentre@gmail.com</p></div>
@@ -264,7 +265,7 @@
                 <div><i class="fas fa-map-marker-alt"></i><p>Bukhara, Uzbekistan</p></div>
                 <div><i class="far fa-clock"></i><p>8:30 - 19:30</p></div>
             </div>
-        </form>
+        </div>
     </section>
     
     <footer>

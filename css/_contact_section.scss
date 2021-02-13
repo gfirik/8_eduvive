@@ -39,14 +39,18 @@
             input[type="text"], input[type="email"]{
                 padding-left: 1rem;
             }
-            input[type="button"]{
+            input[type="submit"]{
                 background: $black-2;
                 color: $white;
                 height: 10vh;
+                display: block;
                 &:hover {
                     cursor: pointer;
                     background: $yellow;
                 }
+            }
+            input[value="Sent"]{
+                display: none;
             }
             span{
                 position: absolute;

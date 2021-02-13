@@ -951,15 +951,20 @@ header a:hover {
   padding-left: 1rem;
 }
 
-#contact .contact .left-contact input[type="button"] {
+#contact .contact .left-contact input[type="submit"] {
   background: #333333;
   color: #FDFFFF;
   height: 10vh;
+  display: block;
 }
 
-#contact .contact .left-contact input[type="button"]:hover {
+#contact .contact .left-contact input[type="submit"]:hover {
   cursor: pointer;
   background: #ffd800;
+}
+
+#contact .contact .left-contact input[value="Sent"] {
+  display: none;
 }
 
 #contact .contact .left-contact span {
