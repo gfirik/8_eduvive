@@ -35,15 +35,3 @@ function toggleMenu() {
         exitBtn.style.display="none";
     }
 }
-function exitMenu() {
-    if(nav.style.display="flex") {
-        nav.style.display="none";
-        exitBtn.style.display="none";
-        menuBtn.style.display="flex";
-    }
-    else {
-        nav.style.display="flex";
-        exitBtn.style.display="flex";
-        menuBtn.style.display="none";
-    }
-}
